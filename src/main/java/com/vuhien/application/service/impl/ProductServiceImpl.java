@@ -94,6 +94,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<ProductDTO> getListProductNew() {
+        return productRepository.getListProductNew();
+    }
+
+    @Override
     public Page<Product> getListProductByCategoryOrProductNameContaining(Pageable pageable, Integer categoryId, String productName) {
         return productRepository.getListProductByCategoryOrProductNameContaining(pageable,categoryId,productName);
     }

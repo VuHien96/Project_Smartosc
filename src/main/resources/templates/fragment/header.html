@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <!-- header-top-start -->
+    <div class="header-top" th:fragment="header">
+        <div class="container">
+            <div class="row ptb-12 bb">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="header-left-menu">
+                        <ul>
+                            <li><a href="#"><img src="img/flag/1.jpg" th:src="@{/client/img/flag/1.jpg}" alt="flag" />English<i class="fa fa-angle-down"></i></a>
+                                <div class="submenu-top">
+                                    <ul>
+                                        <li><a href="#"><img src="img/flag/1.jpg" th:src="@{/client/img/flag/1.jpg}" alt="flag" />English</a></li>
+                                        <li><a href="#"><img src="img/flag/2.jpg" th:src="@{/client/img/flag/1.jpg}" alt="flag" />اللغة العربية</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Currency : EUR<i class="fa fa-angle-down"></i></a>
+                                <div class="submenu-top">
+                                    <ul>
+                                        <li><a href="#"> Dollar (USD)</a></li>
+                                        <li><a href="#"> Euro (EUR)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">My account<i class="fa fa-angle-down"></i></a>
+                                <div class="submenu-top">
+                                    <ul>
+                                        <li><a href="register.html">My account</a></li>
+                                        <li><a href="wishlist.html">My wishlist</a></li>
+                                        <li><a href="checkout.html">checkout</a></li>
+                                        <li><a href="login.html">Log in</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="links-nav">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-map-marker"></i>Store Location</a></li>
+                            <li><a href="#"><i class="fa fa-cog"></i>Guarantee</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-top-end -->
+    <!-- header-mid-area-start -->
+    <div class="header-mid-area ptb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="logo-area">
+                        <a href="index.html"><img th:src="@{/client/img/logo/7.png}" alt="logo" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
+                    <div class="search-area">
+                        <form action="#">
+                            <input type="text" placeholder="Search entire store here ..." />
+                            <select id="sorter" class="header-option" data-role="sorter">
+                                <option value="Categories " selected="selected"> All Categories </option>
+                                <option value="headphones">headphones</option>
+                                <option value="Solo"> --Headphones Solo™2 </option>
+                            </select>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="header-user">
+                        <a><i class="zmdi zmdi-local-shipping zmdi-hc-fw"></i>Free Shipping on Orders $50+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-mid-area-end -->
+    <!-- header-menu-area-start -->
+    <div class="header-menu-area" id="header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 hidden-sm hidden-xs">
+                    <div class="main-menu">
+<!--                        <nav>-->
+<!--                            <ul>-->
+<!--                                <li class="active"><a href="index.html">Home</a></li>-->
+<!--                                <li><a href="shop.html">headphones</a></li>-->
+<!--                                <li><a href="#">Mobiles & Tablets</a></li>-->
+<!--                                <li><a href="#">Photo & Camera</a></li>-->
+<!--                                <li><a href="shop.html">Pages</a></li>-->
+<!--                                <li><a href="blog.html">Blog<i class="fa fa-angle-down"></i></a>-->
+<!--                                    <div class="sub-menu">-->
+<!--                                        <ul>-->
+<!--                                            <li><a href="blog.html">blog</a></li>-->
+<!--                                            <li><a href="blog-details.html">blog-details</a></li>-->
+<!--                                        </ul>-->
+<!--                                    </div>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </nav>-->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <div class="cart-area">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+                            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a>
+                                <span>2</span>
+                                <div class="mini-cart-sub">
+                                    <div class="cart-product">
+                                        <div class="single-cart">
+                                            <div class="cart-img">
+                                                <a href="#"><img src="img/product/1.jpg" alt="book" /></a>
+                                            </div>
+                                            <div class="cart-info">
+                                                <h5><a href="#">Joust Duffle Bag</a></h5>
+                                                <p>1 x £60.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="single-cart">
+                                            <div class="cart-img">
+                                                <a href="#"><img src="img/product/2.jpg" alt="book" /></a>
+                                            </div>
+                                            <div class="cart-info">
+                                                <h5><a href="#">Chaz Kangeroo Hoodie</a></h5>
+                                                <p>1 x £52.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-totals">
+                                        <h5>Total <span>£12.00</span></h5>
+                                    </div>
+                                    <div class="cart-bottom">
+                                        <a href="checkout.html">Check out</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-menu-area-end -->
+    <!-- mobile-menu-area-start -->
+    <div class="mobile-menu-area hidden-md hidden-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mobile-menu">
+                        <nav id="mobile-menu-active">
+                            <ul id="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="blog.html">blog</a>
+                                    <ul>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-details.html">blog-details</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile-menu-area-end -->
+</header>
+</body>
+</html>

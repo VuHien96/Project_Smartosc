@@ -40,7 +40,7 @@ public class AdminController {
     public String category(Model model,
                            @Valid @ModelAttribute("categoryname") CategoryVM categoryName,
                            @RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
-                           @RequestParam(name = "size", required = false, defaultValue = "8") Integer size) {
+                           @RequestParam(name = "size", required = false, defaultValue = "4") Integer size) {
 
         CategoryVM vm = new CategoryVM();
 

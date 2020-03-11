@@ -19,7 +19,7 @@ import java.util.List;
 @Table(name = "category")
 public class Category implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int categoryId;
 
     @Column(name = "name", length = 45)

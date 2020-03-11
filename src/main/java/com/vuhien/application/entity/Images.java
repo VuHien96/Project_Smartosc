@@ -18,7 +18,7 @@ import java.util.Date;
 public class Images implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int imageId;
 
     @Column(name = "link")

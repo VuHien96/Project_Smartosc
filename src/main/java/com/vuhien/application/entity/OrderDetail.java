@@ -18,7 +18,7 @@ import java.util.Date;
 public class OrderDetail implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int orderDetailId;
 
     @Column(name = "quantity")

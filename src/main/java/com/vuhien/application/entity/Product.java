@@ -19,7 +19,7 @@ import java.util.List;
 @Table(name = "product")
 public class Product implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int productId;
 
     @Column(name = "name")

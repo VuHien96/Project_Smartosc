@@ -16,6 +16,7 @@ public interface ProductService {
     ProductDTO createProduct(ProductDTO productDTO);
     ProductDTO updateProduct(ProductDTO productDTO,int productId);
     void deleteProduct(int productId);
+    List<ProductDTO> getListProductNew();
     Product getOne(int productId);
     Page<Product> getListProductByCategoryOrProductNameContaining(Pageable pageable,
                                                                   @Param("categoryId") Integer categoryId,
