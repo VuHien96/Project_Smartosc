@@ -1,6 +1,7 @@
 package com.vuhien.application.service.impl;
 
 import com.vuhien.application.entity.Category;
+import com.vuhien.application.entity.Product;
 import com.vuhien.application.exception.DuplicateRecordException;
 import com.vuhien.application.exception.InternalServerException;
 import com.vuhien.application.exception.NotFoundException;
@@ -31,6 +32,10 @@ public class CategoryServiceImpl implements CategoryService {
             categoryDTOS.add(CategoryMapper.toCategoryDTO(category));
         }
         return categoryDTOS;
+    }
+    public Category getOne(int categoryId){
+        Category category = categoryRepository.getOne(categoryId);
+        return category;
     }
 
     @Override

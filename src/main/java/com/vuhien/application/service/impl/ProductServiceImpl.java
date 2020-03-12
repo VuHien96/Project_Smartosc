@@ -95,7 +95,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<ProductDTO> getListProductNew() {
-        return productRepository.getListProductNew();
+        List<Product> products = productRepository.getListProductNew();
+        List<ProductDTO> productDTOS = new ArrayList<>();
+        for (Product product : products) {
+            productDTOS.add(ProductMapper.toProductDTO(product));
+        }
+        return productDTOS;
     }
 
     @Override

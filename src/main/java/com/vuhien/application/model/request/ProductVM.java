@@ -23,5 +23,6 @@ public class ProductVM {
     private Date createdDate;
     private List<ProductVM> productVMList;
     private List<CategoryVM> categoryVMList;
+    private List<ImageVM> imageVMS;
     private String keyWord;
 }

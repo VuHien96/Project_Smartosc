@@ -47,7 +47,7 @@ public class HomeController {
         }
         vm.setCategoryVMList(categoryVMList);
 
-        List<ProductDTO> productDTOS = productService.getListProduct();
+        List<ProductDTO> productDTOS = productService.getListProductNew();
         List<ProductVM> productVMList = new ArrayList<>();
 
         for (ProductDTO productDTO : productDTOS) {

@@ -1,772 +1,668 @@
 <!doctype html>
-<html class="no-js" lang="en" xmlns:th="https://www.thymeleaf.org/">
-    
-<!-- Mirrored from preview.hasthemes.com/legend/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2020 01:27:49 GMT -->
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<!-- Mirrored from demo.hasthemes.com/hiraola-preview/hiraola/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Mar 2020 13:45:40 GMT -->
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Legend - Multipurpose eCommerce Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home One || Hiraola - Jewellery eCommerce Bootstrap 4 Template</title>
+    <meta name="robots" content="noindex, follow"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-        <!-- Favicon -->
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- CSS
+	============================================ -->
 
-		<!-- all css here -->
-		<!-- bootstrap v3.3.6 css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" th:href="@{/client/css/bootstrap.min.css}">
-		<!-- animate css -->
-        <link rel="stylesheet" href="css/animate.css" th:href="@{/client/css/animate.css}">
-		<!-- jquery-ui.min css -->
-        <link rel="stylesheet" href="css/jquery-ui.min.css" th:href="@{/client/css/jquery-ui.min.css}">
-		<!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css" th:href="@{/client/css/meanmenu.min.css}">
-		<!-- owl.carousel css -->
-        <link rel="stylesheet" href="css/owl.carousel.css" th:href="@{/client/css/owl.carousel.css}">
-		<!-- font-awesome css -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" th:href="@{/client/css/font-awesome.min.css}">
-		<!-- material-design-iconic-font.css -->
-        <link rel="stylesheet" href="css/material-design-iconic-font.css" th:href="@{/client/css/material-design-iconic-font.css}">
-		<!-- chosen.min.css -->
-        <link rel="stylesheet" href="css/chosen.min.css" th:href="@{/client/css/chosen.min.css}">
-		<!-- nivo-slider.css -->
-        <link rel="stylesheet" href="css/nivo-slider.css" th:href="@{/client/css/nivo-slider.css}">
-		<!--flexslider.css -->
-        <link rel="stylesheet" href="css/flexslider.css" th:href="@{/client/css/flexslider.css}">
-		<!-- style css -->
-		<link rel="stylesheet" href="css/style.css" th:href="@{/client/css/style.css}">
-		<!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css" th:href="@{/client/css/responsive.css}">
-		<!-- modernizr css -->
-        <script src="js/vendor/modernizr-2.8.3.min.js" th:src="@{/client/js/vendor/modernizr-2.8.3.min.js}"></script>
-    </head>
-    <body class="home-6 home-7">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" th:href="@{/client/css/vendor/bootstrap.min.css}">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css" th:href="@{/client/css/vendor/font-awesome.css}">
+    <!-- Fontawesome Star -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-stars.css"
+          th:href="@{/client/css/vendor/fontawesome-stars.css}">
+    <!-- Ion Icon -->
+    <link rel="stylesheet" href="assets/css/vendor/ion-fonts.css" th:href="@{/client/css/vendor/ion-fonts.css}">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.css" th:href="@{/client/css/plugins/slick.css}">
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" th:href="@{/client/css/plugins/animate.css}">
+    <!-- jQuery Ui -->
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css"
+          th:href="@{/client/css/plugins/jquery-ui.min.css}">
+    <!-- Lightgallery -->
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css"
+          th:href="@{/client/css/plugins/lightgallery.min.css}">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" th:href="@{/client/css/plugins/nice-select.css}">
+    <!-- Timecircles -->
+    <link rel="stylesheet" href="assets/css/plugins/timecircles.css" th:href="@{/client/css/plugins/timecircles.css}">
 
-        <!-- Add your site or application content here -->
-        <!-- header-area-start -->
-        <header th:replace="~{/fragment/header :: header}"></header>
-        <!-- header-area-end -->
-		<!-- pos_bannerslide-start -->
-		<div class="pos_bannerslide ptb-50">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pull-right">
-						<!-- slider-area-start -->
-						<div class="slider-area">
-							<div id="slider-2">
-								<img  th:src="@{/client/img/slider/2.jpg}" alt="slider-img" title="#caption1" />
-								<img  th:src="@{/client/img/slider/3.jpg}" alt="slider-img" title="#caption2" />
-							</div>
-							<div class="nivo-html-caption" id="caption1" >
-								<div class="slider-text">
-									<h1 class="wow fadeInDown" data-wow-delay=".5s">Asus eeebook</h1>
-									<h2 class="wow fadeInDown" data-wow-delay=".8s">Now with wider range</h2>
-									<p class="wow fadeInDown" data-wow-delay="1.1s">Starting at</p>
-									<a href="#" class="wow fadeInDown" data-wow-delay="1.4s"><i class="fa fa-shopping-cart"></i>buy now</a>
-								</div>
-							</div>
-							<div class="nivo-html-caption" id="caption2" >
-								<div class="slider-text wow fadeInDownBig" data-wow-delay=".5s" >
-									<h1 class="wow fadeInDown" data-wow-delay=".5s">Asus pw100</h1>
-									<h2 class="wow fadeInDown" data-wow-delay=".8s">Wireless Charging Stand</h2>
-									<p class="wow fadeInDown" data-wow-delay="1.1s">Elegant Pyramid design with delicate <br /> texture and compact outlook</p>
-									<a href="#" class="wow fadeInDown" data-wow-delay="1.4s"><i class="fa fa-shopping-cart"></i>buy now</a>
-								</div>
-							</div>
-						</div>
-						<!-- slider-area-end -->
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<!-- categories-menu-start -->
-						<div class="categories-menu">
-							<div class="categories-title">
-								<h2><a href="#" id="showcat"><i class="fa fa-bars"></i>Danh mục</a></h2>
-							</div>
-							<div class="categories-sub-menu" id="hidecat">
-								<ul>
-									<li class="hidden-md" th:each="category : ${vm.getCategoryVMList()}">
-										<a href="#" th:text="${category.getName()}"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- categories-menu -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- pos_bannerslide-end -->
-		<!-- banner-home-start -->
-		<div class="banner-home pos_bannerslide pb-20">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<div class="single-banner-2">
-							<a href="#"><img  th:src="@{/client/img/banner/24.jpg}" alt="banner" /></a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<div class="single-banner-2">
-							<a href="#"><img  th:src="@{/client/img/banner/24.jpg}" alt="banner" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- banner-home-end -->
-		<!-- pos_new_product-area-start -->
-		<div class="pos_new_product pt-50">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title mb-30">
-							<h2>Sản phẩm mới nhất</h2>
-						</div>
-					</div>
-				</div>	
-				<div class="tab-active-4">
-					<!-- single-product-start -->
-					<div class="single-product" th:each="product : ${vm.getProductVMList()}">
-						<div class="product-img">
-							<a href="#">
-								<img th:src="${product.getImages()}" alt="product" class="first" />
-							</a>
-						</div>
-						<div class="product-content">
-							<h3><a href="#" th:text="${product.getName()}"></a></h3>
-							<div class="product-rating mb-10">
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-							</div>
-							<div class="product-price">
-								<ul>
-									<li class="new-price" th:text="${product.getPrice() + ' vnđ'}"></li>
-								</ul>
-							</div>
-							<div class="add-to-links mt-15">
-								<ul>
-									<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-									<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-									<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-									<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- single-product-end -->
-				</div>
-			</div>
-		</div>
-		<!-- pos_new_product-area-end -->
-		<!-- banner-area-2-start -->
-		<div class="banner-area-2 mt-10">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="single-banner-2">
-							<a href="#"><img src="img/banner/26.jpg" th:src="@{/client/img/banner/26.jpg}" alt="banner" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- banner-area-2-end -->
-		<!-- most-popular-product-start -->
-		<div class="most-popular-product pt-20 pb-50">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title mb-30">
-							<h2>Featured products</h2>
-						</div>
-					</div>
-					<div class="product-active-5">
-						<div class="product-total">
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/26.jpg" th:src="@{/client/img/product/26.jpg}" alt="product" class="first" />
-										<img src="img/product/27.jpg" th:src="@{/client/img/product/27.jpg}" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Summer Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price sale">32,78 €</li>
-											<li class="old-price">36,61 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/101.jpg" th:src="@{/client/img/product/101.jpg}" alt="product" class="first" />
-										<img src="img/product/102.jpg" th:src="@{/client/img/product/102.jpg}" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">31,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/23.jpg" th:src="@{/client/img/product/23.jpg}" alt="product" class="first" />
-										<img src="img/product/24.jpg" th:src="@{/client/img/product/24.jpg}" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Summer Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">36,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-						</div>
-						<div class="product-total">
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/51.jpg" alt="product" class="first" />
-										<img src="img/product/52.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Summer Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price sale">34,78 €</li>
-											<li class="old-price">36,61 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/22.jpg" th:src="@{/img/product/22.jpg}" alt="product" class="first" />
-										<img src="img/product/21.jpg" th:src="@{/img/product/21.jpg}" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Chiffon Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">24,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/30.jpg" alt="product" class="first" />
-										<img src="img/product/31.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">61,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-						</div>
-						<div class="product-total">
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/124.jpg" th:src="@{/img/product/124.jpg}" alt="product" class="first" />
-										<img src="img/product/125.jpg" th:src="@{/img/product/125.jpg}" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Blouse</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">32,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/12.jpg" alt="product" class="first" />
-										<img src="img/product/1.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Summer Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price sale">32,78 €</li>
-											<li class="old-price">36,61 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/129.jpg" alt="product" class="first" />
-										<img src="img/product/130.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Faded Short Sleeves...</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price sale">18,78 €</li>
-											<li class="old-price">19,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-						</div>
-						<div class="product-total">
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/117.jpg" alt="product" class="first" />
-										<img src="img/product/118.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Summer Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price sale">34,78 €</li>
-											<li class="old-price">36,61 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/30.jpg" alt="product" class="first" />
-										<img src="img/product/31.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Chiffon Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">24,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-							<!-- single-product-start -->
-							<div class="single-product">
-								<div class="product-img">
-									<a href="#">
-										<img src="img/product/123.jpg" alt="product" class="first" />
-										<img src="img/product/124.jpg" alt="product" class="second" />
-									</a>
-								</div>
-								<div class="product-content">
-									<h3><a href="#">Printed Dress</a></h3>
-									<div class="product-rating mb-10">
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-										<a href="#"><i class="fa fa-star"></i></a>
-									</div>
-									<div class="product-price">
-										<ul>
-											<li class="new-price">61,78 €</li>
-										</ul>
-									</div>
-									<div class="add-to-links mt-15">
-										<ul>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-											<li><a href="#"><i class="fa fa-refresh"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-											<li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- single-product-end -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- most-popular-product-end -->
-		<!-- brand-area-start -->
-		<div class="brand-area">
-			<div class="container">
-				<div class="row">
-					<div class="brand-active-2 bt-2 ptb-50">
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/1.png" alt="brand" /></a>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/2.png" alt="brand" /></a>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/3.png" alt="brand" /></a>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/4.png" alt="brand" /></a>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/5.png" alt="brand" /></a>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/6.png" alt="brand" /></a>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="single-brand">
-								<a href="#"><img src="img/brand/7.png" alt="brand" /></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- brand-area-end -->
-		<!-- newslatter-area-start -->
-		<div class="newslatter-area ptb-30">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="newslatter-content text-right">
-							<h4>Newsletter</h4>
-						</div>
-						<div class="newslatter-form">
-							<form action="#">
-								<input type="text" placeholder="Enter your e-mail" />
-								<a href="#"><i class="fa fa-paper-plane"></i></a>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- newslatter-area-end -->
-		<!-- footer-area-start -->
-        <footer th:replace="~{/fragment/footer :: footer}"></footer>
-		<!-- footer-area-end -->
-		<!-- modal-area-start -->
-		<div class="modal-area">
-			<!-- single-modal-start -->
-			<div class="modal fade" id="mymodal" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<div class="modal-img">
-								<div class="single-img">
-									<img src="img/product/2.jpg" alt="mobile" class="primary" />
-								</div>
-							</div>
-							<div class="model-text">
-								<h2><a href="#">Printed Summer Dress</a> </h2>
-								<div class="product-rating">
-									<a href="#"><i class="fa fa-star"></i></a>
-									<a href="#"><i class="fa fa-star"></i></a>
-									<a href="#"><i class="fa fa-star"></i></a>
-									<a href="#"><i class="fa fa-star"></i></a>
-									<a href="#"><i class="fa fa-star-o"></i></a>
-								</div>
-								<div class="price-rate">
-									<span class="old-price"><del>$39.00</del></span>
-									<span class="new-price">$59.00</span>
-								</div>
-								<div class="short-description mt-20">
-									<p>Bacon ipsum dolor sit amet ut nostrud chuck, voluptate adipisicing veniam kielbasa fugiat ex spare ribs. Incididunt sint officia non cow, ut et. Cillum porchetta tongue occaecat laborum bacon aliquip fatback flank dolore short loin ball tip bresaola deserunt dolor. Shoulder fugiat ut in ut tail swine dolore, capicola ullamco beef occaecat meatball. Laboris turkey in et chuck deserunt ad incididunt do.</p>
-								</div>
-								<form action="#">
-									<input type="number" value="1"/>
-									<button type="submit">Add to cart</button>
-								</form>
-								<div class="product-meta">
-									<span>
-										Categories: 
-										<a href="#">albums</a>,<a href="#">Music</a>
-									</span>
-									<span>
-										Tags: 
-										<a href="#">albums</a>,<a href="#">Music</a>
-									</span>
-								</div>
-								<!-- social-icon-start -->
-								<div class="social-icon mt-20">
-									<ul>
-										<li><a href="#" data-toggle="tooltip" title="Share on Facebook"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#" data-toggle="tooltip" title="Share on Twitter"><i  class="fa fa-twitter"></i></a></li>
-										<li><a href="#" data-toggle="tooltip" title="Email to a Friend"><i class="fa fa-envelope-o"></i></a></li>
-										<li><a href="#" data-toggle="tooltip" title="Pin on Pinterest"><i class="fa fa-pinterest"></i></a></li>
-										<li><a href="#" data-toggle="tooltip" title="Share on Google+"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-								<!-- social-icon-end -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- single-modal-end -->
-		</div>
-		<!-- modal-area-end -->
-		
-		
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from the above) -->
+    <!--
+    <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    -->
 
-		<!-- all js here -->
-		<!-- jquery latest version -->
-        <script src="js/vendor/jquery-1.12.0.min.js" th:src="@{/client/js/vendor/jquery-1.12.0.min.js}"></script>
-		<!-- bootstrap js -->
-        <script src="js/bootstrap.min.js" th:src="@{/client/js/bootstrap.min.js}"></script>
-		<!-- owl.carousel js -->
-        <script src="js/owl.carousel.min.js" th:src="@{/client/js/owl.carousel.min.js}"></script>
-		<!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js" th:src="@{/client/js/jquery.meanmenu.js}"></script>
-		<!-- jquery-ui js -->
-        <script src="js/jquery-ui.min.js" th:src="@{/client/js/jquery-ui.min.js}"></script>
-		<!-- wow js -->
-        <script src="js/wow.min.js" th:src="@{/client/js/wow.min.js}"></script>
-		<!-- chosen.jquery.min.js -->
-        <script src="js/chosen.jquery.min.js" th:src="@{/client/js/chosen.jquery.min.js}"></script>
-		<!-- jquery.nivo.slider.js -->
-        <script src="js/jquery.nivo.slider.js" th:src="@{/client/js/jquery.nivo.slider.js}"></script>
-		<!-- jquery.countdown.min.js -->
-        <script src="js/jquery.countdown.min.js" th:src="@{/client/js/jquery.countdown.min.js}"></script>
-		<!-- jquery.flexslider.js -->
-        <script src="js/jquery.flexslider.js" th:src="@{/client/js/jquery.flexslider.js}"></script>
-		<!-- jquery.counterup.min.js -->
-        <script src="js/jquery.counterup.min.js" th:src="@{/client/js/jquery.counterup.min.js}"></script>
-		<!-- waypoints.min.js -->
-        <script src="js/waypoints.min.js" th:src="@{/client/js/waypoints.min.js}"></script>
-		<!-- plugins js -->
-        <script src="js/plugins.js" th:src="@{/client/js/plugins.js}"></script>
-		<!-- main js -->
-        <script src="js/main.js" th:src="@{/client/js/main.js}"></script>
-    </body>
+    <!-- Main Style CSS (Please use minify version for better website load performance) -->
+    <link rel="stylesheet" href="assets/css/style.css" th:href="@{/client/css/style.css}">
+    <!--<link rel="stylesheet" href="assets/css/style.min.css">-->
 
-<!-- Mirrored from preview.hasthemes.com/legend/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Feb 2020 01:29:12 GMT -->
+</head>
+
+<body class="template-color-1">
+
+<div class="main-wrapper">
+
+    <!-- Begin Loading Area -->
+    <!--        <div class="loading">-->
+    <!--            <div class="text-center middle">-->
+    <!--                <div class="lds-ellipsis">-->
+    <!--                    <div></div>-->
+    <!--                    <div></div>-->
+    <!--                    <div></div>-->
+    <!--                    <div></div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!-- Loading Area End Here -->
+    <!-- Begin Hiraola's Newsletter Popup Area -->
+    <!--        <div class="popup_wrapper">-->
+    <!--            <div class="test">-->
+    <!--                <span class="popup_off"><i class="ion-android-close"></i></span>-->
+    <!--                <div class="subscribe_area">-->
+    <!--                    <h2>Sign Up Newsletter</h2>-->
+    <!--                    <p>Subscribe to the our store mailing list to receive updates on new arrivals, special offers and other discount information.</p>-->
+    <!--                    <div class="subscribe-form-group">-->
+    <!--                        <form class="subscribe-form" action="#">-->
+    <!--                            <input autocomplete="off" type="text" name="message" id="message" placeholder="Enter your email address">-->
+    <!--                            <button type="submit">subscribe</button>-->
+    <!--                        </form>-->
+    <!--                    </div>-->
+    <!--                    <div class="subscribe-bottom">-->
+    <!--                        <input type="checkbox" id="newsletter-permission">-->
+    <!--                        <label for="newsletter-permission">Don't show this popup again</label>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!-- Hiraola's Newsletter Popup Area Here -->
+
+    <!-- Begin Hiraola's Header Main Area -->
+    <div th:replace="~{/fragment/header :: header}"></div>
+    <!-- Hiraola's Header Main Area End Here -->
+
+    <div class="slider-with-category_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="category-menu">
+                        <div class="category-heading">
+                            <h2 class="categories-toggle"><span>Danh sách sản phẩm</span></h2>
+                        </div>
+                        <div id="cate-toggle" class="category-menu-list">
+                            <ul>
+                                <li th:each="category : ${vm.getCategoryVMList()}">
+                                    <a th:href="${'/products/list/?categoryId='+category.getId()}" th:text="${category.getName()}"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-9 col-md-9 col-sm-12 col-xs-12 pull-right">
+                    <div class="hiraola-slider_area">
+                        <div class="main-slider">
+                            <!-- Begin Single Slide Area -->
+                            <div class="single-slide animation-style-01 bg-1">
+                                <div class="container">
+                                    <div class="slider-content">
+                                        <h5><span>Black Friday</span> This Week</h5>
+                                        <h2>Work Desk</h2>
+                                        <h3>Surface Studio 2019</h3>
+                                        <h4>Starting at <span>£1599.00</span></h4>
+                                        <div class="hiraola-btn-ps_left slide-btn">
+                                            <a class="hiraola-btn" href="shop-left-sidebar.html">Shopping Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-progress"></div>
+                                </div>
+                            </div>
+                            <!-- Single Slide Area End Here -->
+                            <!-- Begin Single Slide Area -->
+                            <div class="single-slide animation-style-02 bg-2">
+                                <div class="container">
+                                    <div class="slider-content">
+                                        <h5><span>-10% Off</span> This Week</h5>
+                                        <h2>Phantom4</h2>
+                                        <h3>Pro+ Obsidian</h3>
+                                        <h4>Starting at <span>£809.00</span></h4>
+                                        <div class="hiraola-btn-ps_left slide-btn">
+                                            <a class="hiraola-btn" href="shop-left-sidebar.html">Shopping Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-progress"></div>
+                                </div>
+                            </div>
+                            <div class="single-slide animation-style-02 bg-3">
+                                <div class="container">
+                                    <div class="slider-content">
+                                        <h5><span>Black Friday</span> This Week</h5>
+                                        <h2>Work Desk</h2>
+                                        <h3>Surface Studio 2019</h3>
+                                        <h4>Starting at <span>£1599.00</span></h4>
+                                        <div class="hiraola-btn-ps_left slide-btn">
+                                            <a class="hiraola-btn" href="shop-left-sidebar.html">Shopping Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hiraola-banner_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="banner-item img-hover_effect">
+                        <a href="shop-left-sidebar.html">
+                            <img class="img-full" th:src="@{/client/images/banner/1_2.jpg}" alt="Hiraola's Banner">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="banner-item img-hover_effect">
+                        <a href="shop-left-sidebar.html">
+                            <img class="img-full" th:src="@{/client/images/banner/1_3.jpg}" alt="Hiraola's Banner">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="banner-item img-hover_effect">
+                        <a href="shop-left-sidebar.html">
+                            <img class="img-full" th:src="@{/client/images/banner/1_4.jpg}" alt="Hiraola's Banner">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Begin Hiraola's Product Area -->
+    <div class="hiraola-product_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hiraola-section_title">
+                        <h4>Sản phẩm mới nhất</h4>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="hiraola-product_slider">
+                        <!-- Begin Hiraola's Slide Item Area -->
+                        <div class="slide-item" th:each="product : ${vm.getProductVMList()}">
+                            <div class="single_product">
+                                <div class="product-img">
+                                    <a th:href="${'/product/'+product.getId()}">
+                                        <img class="primary-img" th:src="${product.getImages()}"alt="Hiraola's Product Image">
+                                    </a>
+                                    <span class="sticker">New</span>
+                                    <div class="add-actions">
+                                        <ul>
+                                            <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip"
+                                                   data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a>
+                                            </li>
+                                            <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip"
+                                                   data-placement="top" title="Compare This Product"><i
+                                                    class="ion-ios-shuffle-strong"></i></a></li>
+                                            <li class="quick-view-btn" data-toggle="modal"
+                                                data-target="#exampleModalCenter"><a href="javascript:void(0)"
+                                                                                     data-toggle="tooltip"
+                                                                                     data-placement="top"
+                                                                                     title="Quick View"><i
+                                                    class="ion-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hiraola-product_content">
+                                    <div class="product-desc_info">
+                                        <h6><a class="product-name" th:href="${'/product/'+product.getId()}" th:text="${product.getName()}"></a></h6>
+                                        <div class="price-box">
+                                            <span class="new-price"th:text="${product.getPrice() + ' vnđ'}"></span>
+                                        </div>
+                                        <div class="additional-add_action">
+                                            <ul>
+                                                <li><a class="hiraola-add_compare" href="wishlist.html"
+                                                       data-toggle="tooltip" data-placement="top"
+                                                       title="Add To Wishlist"><i
+                                                        class="ion-android-favorite-outline"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li><i class="fa fa-star-of-david"></i></li>
+                                                <li><i class="fa fa-star-of-david"></i></li>
+                                                <li><i class="fa fa-star-of-david"></i></li>
+                                                <li><i class="fa fa-star-of-david"></i></li>
+                                                <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hiraola's Slide Item Area End Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hiraola's Product Area End Here -->
+
+    <div class="hiraola-banner_area-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-item img-hover_effect">
+                        <a href="shop-left-sidebar.html">
+                            <img class="img-full" th:src="@{/client/images/banner/1_5.jpg}" alt="Hiraola's Banner">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-item img-hover_effect">
+                        <a href="shop-left-sidebar.html">
+                            <img class="img-full" th:src="@{/client/images/banner/1_6.jpg}" alt="Hiraola's Banner">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Begin Hiraola's Product Tab Area Three -->
+    <div class="hiraola-product-tab_area-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product-tab">
+                        <div class="hiraola-tab_title">
+                            <h4>Trending Products</h4>
+                        </div>
+                    </div>
+                    <div class="tab-content hiraola-tab_content">
+                        <div id="necklaces-2" class="tab-pane active show" role="tabpanel">
+                            <div class="hiraola-product-tab_slider-2">
+                                <!-- Begin Hiraola's Slide Item Area -->
+                                <div class="slide-item" th:each="product : ${vm.getProductVMList()}">
+                                    <div class="single_product">
+                                        <div class="product-img">
+                                            <a th:href="${'/product/'+product.getId()}">
+                                                <img class="primary-img" th:src="${product.getImages()}" alt="Hiraola's Product Image">
+                                            </a>
+                                            <div class="add-actions">
+                                                <ul>
+                                                    <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a>
+                                                    </li>
+                                                    <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                                            class="ion-ios-shuffle-strong"></i></a>
+                                                    </li>
+                                                    <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="hiraola-product_content">
+                                            <div class="product-desc_info">
+                                                <h6><a class="product-name" th:href="${'/product/'+product.getId()}" th:text="${product.getName()}"></a></h6>
+                                                <div class="price-box">
+                                                    <span class="new-price" th:text="${product.getPrice() + ' vnđ'}"></span>
+                                                </div>
+                                                <div class="additional-add_action">
+                                                    <ul>
+                                                        <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                                class="ion-android-favorite-outline"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="rating-box">
+                                                    <ul>
+                                                        <li><i class="fa fa-star-of-david"></i></li>
+                                                        <li><i class="fa fa-star-of-david"></i></li>
+                                                        <li><i class="fa fa-star-of-david"></i></li>
+                                                        <li><i class="fa fa-star-of-david"></i></li>
+                                                        <li><i class="fa fa-star-of-david"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hiraola's Slide Item Area End Here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hiraola's Product Tab Area Three End Here -->
+
+    <!-- Begin Hiraola's Shipping Area -->
+    <div class="hiraola-shipping_area">
+        <div class="container">
+            <div class="shipping-nav">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <img th:src="@{/client/images/shipping-icon/1.png}" alt="Hiraola's Shipping Icon">
+                            </div>
+                            <div class="shipping-content">
+                                <h6>Free Uk Standard Delivery</h6>
+                                <p>Designated day delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <img th:src="@{/client/images/shipping-icon/2.png}" alt="Hiraola's Shipping Icon">
+                            </div>
+                            <div class="shipping-content">
+                                <h6>Freshyly Prepared Ingredients</h6>
+                                <p>Made for your delivery date</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <img th:src="@{/client/images/shipping-icon/3.png}" alt="Hiraola's Shipping Icon">
+                            </div>
+                            <div class="shipping-content">
+                                <h6>98% Of Anta Clients</h6>
+                                <p>Reach their personal goals set</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="shipping-item">
+                            <div class="shipping-icon">
+                                <img th:src="@{/client/images/shipping-icon/4.png}" alt="Hiraola's Shipping Icon">
+                            </div>
+                            <div class="shipping-content">
+                                <h6>Winner Of 15 Awards</h6>
+                                <p>Healthy food and drink 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hiraola's Shipping Area End Here -->
+
+    <!-- Begin Hiraola's Footer Area -->
+    <footer class="footer" th:replace="/fragment/footer :: footer"></footer>
+    <!-- Hiraola's Footer Area End Here -->
+    <!-- Begin Hiraola's Modal Area -->
+    <div class="modal fade modal-wrapper" id="exampleModalCenter">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-inner-area sp-area row">
+                        <div class="col-lg-5 col-md-5">
+                            <div class="sp-img_area">
+                                <div class="sp-img_slider-2 slick-img-slider hiraola-slick-slider arrow-type-two"
+                                     data-slick-options='{
+                                                        "slidesToShow": 1,
+                                                        "arrows": false,
+                                                        "fade": true,
+                                                        "draggable": false,
+                                                        "swipe": false,
+                                                        "asNavFor": ".sp-img_slider-nav"
+                                                        }'>
+                                    <div class="single-slide red">
+                                        <img src="assets/images/single-product/large-size/1.jpg"
+                                             alt="Hiraola's Product Image">
+                                    </div>
+                                    <div class="single-slide orange">
+                                        <img src="assets/images/single-product/large-size/2.jpg"
+                                             alt="Hiraola's Product Image">
+                                    </div>
+                                    <div class="single-slide brown">
+                                        <img src="assets/images/single-product/large-size/3.jpg"
+                                             alt="Hiraola's Product Image">
+                                    </div>
+                                    <div class="single-slide umber">
+                                        <img src="assets/images/single-product/large-size/4.jpg"
+                                             alt="Hiraola's Product Image">
+                                    </div>
+                                </div>
+                                <div class="sp-img_slider-nav slick-slider-nav hiraola-slick-slider arrow-type-two"
+                                     data-slick-options='{
+                                   "slidesToShow": 4,
+                                    "asNavFor": ".sp-img_slider-2",
+                                   "focusOnSelect": true
+                                  }' data-slick-responsive='[
+                                                        {"breakpoint":1201, "settings": {"slidesToShow": 2}},
+                                                        {"breakpoint":768, "settings": {"slidesToShow": 3}},
+                                                        {"breakpoint":577, "settings": {"slidesToShow": 3}},
+                                                        {"breakpoint":481, "settings": {"slidesToShow": 2}},
+                                                        {"breakpoint":321, "settings": {"slidesToShow": 2}}
+                                                    ]'>
+                                    <div class="single-slide red">
+                                        <img src="assets/images/single-product/small-size/1.jpg"
+                                             alt="Hiraola's Product Thumnail">
+                                    </div>
+                                    <div class="single-slide orange">
+                                        <img src="assets/images/single-product/small-size/2.jpg"
+                                             alt="Hiraola's Product Thumnail">
+                                    </div>
+                                    <div class="single-slide brown">
+                                        <img src="assets/images/single-product/small-size/3.jpg"
+                                             alt="Hiraola's Product Thumnail">
+                                    </div>
+                                    <div class="single-slide umber">
+                                        <img src="assets/images/single-product/small-size/4.jpg"
+                                             alt="Hiraola's Product Thumnail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6 col-md-6">
+                            <div class="sp-content">
+                                <div class="sp-heading">
+                                    <h5><a href="#">Light Inverted Pendant Quis Justo Condimentum</a></h5>
+                                </div>
+                                <div class="rating-box">
+                                    <ul>
+                                        <li><i class="fa fa-star-of-david"></i></li>
+                                        <li><i class="fa fa-star-of-david"></i></li>
+                                        <li><i class="fa fa-star-of-david"></i></li>
+                                        <li><i class="fa fa-star-of-david"></i></li>
+                                        <li><i class="fa fa-star-of-david"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="price-box">
+                                    <span class="new-price">£82.84</span>
+                                    <span class="old-price">£93.68</span>
+                                </div>
+                                <div class="essential_stuff">
+                                    <ul>
+                                        <li>EX Tax:<span>£453.35</span></li>
+                                        <li>Price in reward points:<span>400</span></li>
+                                    </ul>
+                                </div>
+                                <div class="list-item">
+                                    <ul>
+                                        <li>10 or more £81.03</li>
+                                        <li>20 or more £71.09</li>
+                                        <li>30 or more £61.15</li>
+                                    </ul>
+                                </div>
+                                <div class="list-item last-child">
+                                    <ul>
+                                        <li>Brand<a href="javascript:void(0)">Buxton</a></li>
+                                        <li>Product Code: Product 15</li>
+                                        <li>Reward Points: 100</li>
+                                        <li>Availability: In Stock</li>
+                                    </ul>
+                                </div>
+                                <div class="color-list_area">
+                                    <div class="color-list_heading">
+                                        <h4>Available Options</h4>
+                                    </div>
+                                    <span class="sub-title">Color</span>
+                                    <div class="color-list">
+                                        <a href="javascript:void(0)" class="single-color active"
+                                           data-swatch-color="red">
+                                            <span class="bg-red_color"></span>
+                                            <span class="color-text">Red (+£3.61)</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="single-color" data-swatch-color="orange">
+                                            <span class="burnt-orange_color"></span>
+                                            <span class="color-text">Orange (+£2.71)</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="single-color" data-swatch-color="brown">
+                                            <span class="brown_color"></span>
+                                            <span class="color-text">Brown (+£0.90)</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="single-color" data-swatch-color="umber">
+                                            <span class="raw-umber_color"></span>
+                                            <span class="color-text">Umber (+£1.81)</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <label>Quantity</label>
+                                    <div class="cart-plus-minus">
+                                        <input class="cart-plus-minus-box" value="1" type="text">
+                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                        <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                                    </div>
+                                </div>
+                                <div class="hiraola-group_btn">
+                                    <ul>
+                                        <li><a href="cart.html" class="add-to_cart">Cart To Cart</a></li>
+                                        <li><a href="cart.html"><i class="ion-android-favorite-outline"></i></a></li>
+                                        <li><a href="cart.html"><i class="ion-ios-shuffle-strong"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="hiraola-tag-line">
+                                    <h6>Tags:</h6>
+                                    <a href="javascript:void(0)">Ring</a>,
+                                    <a href="javascript:void(0)">Necklaces</a>,
+                                    <a href="javascript:void(0)">Braid</a>
+                                </div>
+                                <div class="hiraola-social_link">
+                                    <ul>
+                                        <li class="facebook">
+                                            <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank"
+                                               title="Facebook">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="https://twitter.com/" data-toggle="tooltip" target="_blank"
+                                               title="Twitter">
+                                                <i class="fab fa-twitter-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="youtube">
+                                            <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank"
+                                               title="Youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li class="google-plus">
+                                            <a href="https://www.plus.google.com/discover" data-toggle="tooltip"
+                                               target="_blank" title="Google Plus">
+                                                <i class="fab fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="https://rss.com/" data-toggle="tooltip" target="_blank"
+                                               title="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hiraola's Modal Area End Here -->
+
+</div>
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script th:src="@{/client/js/vendor/jquery-1.12.4.min.js}"></script>
+<!-- Modernizer JS -->
+<script th:src="@{/client/js/vendor/modernizr-2.8.3.min.js}"></script>
+<!-- Popper JS -->
+<script th:src="@{/client/js/vendor/popper.min.js}"></script>
+<!-- Bootstrap JS -->
+<script th:src="@{/client/js/vendor/bootstrap.min.js}"></script>
+
+<!-- Slick Slider JS -->
+<script th:src="@{/client/js/plugins/slick.min.js}"></script>
+<!-- Countdown JS -->
+<script th:src="@{/client/js/plugins/countdown.js}"></script>
+<!-- Barrating JS -->
+<script th:src="@{/client/js/plugins/jquery.barrating.min.js}"></script>
+<!-- Counterup JS -->
+<script th:src="@{/client/js/plugins/jquery.counterup.js}"></script>
+<!-- Nice Select JS -->
+<script th:src="@{/client/js/plugins/jquery.nice-select.js}"></script>
+<!-- Sticky Sidebar JS -->
+<script th:src="@{/client/js/plugins/jquery.sticky-sidebar.js}"></script>
+<!-- Jquery-ui JS -->
+<script th:src="@{/client/js/plugins/jquery-ui.min.js}"></script>
+<script th:src="@{/client/js/plugins/jquery.ui.touch-punch.min.js}"></script>
+<!-- Lightgallery JS -->
+<script th:src="@{/client/js/plugins/lightgallery.min.js}"></script>
+<!-- Scroll Top JS -->
+<script th:src="@{/client/js/plugins/scroll-top.js}"></script>
+<!-- Theia Sticky Sidebar JS -->
+<script th:src="@{/client/js/plugins/theia-sticky-sidebar.min.js}"></script>
+<!-- Waypoints JS -->
+<script th:src="@{/client/js/plugins/waypoints.min.js}"></script>
+<!-- Instafeed JS -->
+<script th:src="@{/client/js/plugins/instafeed.min.js}"></script>
+<!-- ElevateZoom JS -->
+<script th:src="@{/client/js/plugins/jquery.elevateZoom-3.0.8.min.js}"></script>
+<!-- Timecircles JS -->
+<script th:src="@{/client/js/plugins/timecircles.js}"></script>
+
+<!-- Vendor & Plugins JS (Please remove the comment from below vendor.min.js & plugins.min.js for better website load performance and remove js files from avobe) -->
+<!--
+<script src="assets/js/vendor/vendor.min.js"></script>
+<script src="assets/js/plugins/plugins.min.js"></script>
+-->
+
+<!-- Main JS -->
+<script th:src="@{/client/js/main.js}"></script>
+
+</body>
+
+
+<!-- Mirrored from demo.hasthemes.com/hiraola-preview/hiraola/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Mar 2020 13:47:04 GMT -->
 </html>
