@@ -36,12 +36,16 @@
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css" th:href="@{/client/css/plugins/nice-select.css}">
     <!-- Timecircles -->
     <link rel="stylesheet" href="assets/css/plugins/timecircles.css" th:href="@{/client/css/plugins/timecircles.css}">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from the above) -->
     <!--
+
     <script src="assets/js/vendor/vendor.min.js"></script>
     <script src="assets/js/plugins/plugins.min.js"></script>
     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <!-- Main Style CSS (Please use minify version for better website load performance) -->
     <link rel="stylesheet" href="assets/css/style.css" th:href="@{/client/css/style.css}">
@@ -75,18 +79,29 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
+                        <div class="col-md-10 col-sm-10 col-xs-10"><h2 th:if="${vm.getKeyWord()}" th:text="${vm.getKeyWord()}"></h2></div>
                         <div class="shop-toolbar">
                             <div class="product-view-mode">
                                 <a class="active grid-3" data-target="gridview-3" data-toggle="tooltip" data-placement="top" title="Grid View"><i class="fa fa-th"></i></a>
                                 <a class="list" data-target="listview" data-toggle="tooltip" data-placement="top" title="List View"><i class="fa fa-th-list"></i></a>
                             </div>
-                            <div class="product-item-selection_area">
-                                <div class="product-short">
-                                    <label class="select-label">Short By:</label>
-                                    <select class="nice-select">
-                                        <option value="1">Relevance</option>
-                                        <option value="2">Name, A to Z</option>
-                                    </select>
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                                    SortBy
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" th:href="@{''(
+                                                                        categoryId=${param.categoryId},
+                                                                        size=${param.size },
+                                                                        page=${param.page},
+                                                                        sortByPrice='ASC',
+                                                                        name=${param.name})}">Price ASC</a>
+                                    <a class="dropdown-item" th:href="@{''(
+                                                                        categoryId=${param.categoryId},
+                                                                        size=${param.size },
+                                                                        page=${param.page},
+                                                                        sortByPrice='DESC',
+                                                                        name=${param.name})}">Price DESC</a>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +166,13 @@
                                                                 <a class="page-link" th:href="${''}" th:text="${i+1}"><span class="sr-only"></span></a>
                                                             </li>
                                                             <li class="page-item"  th:unless="${page.number == i}"><a class="page-link" th:text="${i+1}"
-                                                                         th:href="${'?'+(#httpServletRequest.getParameter('categoryId')==null?'':('&categoryId='+#httpServletRequest.getParameter('categoryId')))+('&page='+i)
-                                                                         +(#httpServletRequest.getParameter('size')==null?'':('&size='+#httpServletRequest.getParameter('size')))
-                                                                         +(#httpServletRequest.getParameter('name')==null?'':('&name='+#httpServletRequest.getParameter('name')))}"></a></li>
+                                                                                                                      th:href="@{''(
+                                                                                                                      page =${i},
+                                                                                                                      categoryId =${param.categoryId},
+                                                                                                                      size =${param.size},
+                                                                                                                      sortByPrice=${param.sortByPrice},
+                                                                                                                      name=${param.name}
+                                                                                                                      )}"></a></li>
                                                         </th:block>
                                                     </ul>
                                                 </nav>

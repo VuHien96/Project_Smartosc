@@ -132,7 +132,13 @@
                                 <a class="page-link" th:text="${i+1}"><span class="sr-only"></span></a>
                             </li>
                             <li class="page-item"  th:unless="${page.number == i}">
-                                <a class="page-link" th:text="${i+1}" th:href="${'?' +('&page='+i)}"></a>
+                                <a class="page-link" th:text="${i+1}" th:href="@{''(
+                                                                                   page=${i},
+                                                                                   size= ${param.size},
+                                                                                   name =${param.name}
+                                                                                   )}">
+
+                                </a>
                             </li>
                         </th:block>
                     </ul>

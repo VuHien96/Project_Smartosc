@@ -16,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class HomeController {
     private ProductService productService;
 
     @GetMapping("/home")
-    public String home(Model model){
+    public String home(Model model,@ModelAttribute("productname") ProductVM productName){
         HomeVM vm = new HomeVM();
 
         List<CategoryDTO> categoryDTOS =categoryService.getListCategory();

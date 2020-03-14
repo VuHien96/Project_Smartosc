@@ -68,7 +68,7 @@
                 <div class="col-lg-9">
                     <div class="hm-form_area">
                         <form th:action="@{/products/list}" th:object="${productname}" method="get" class="hm-searchbox">
-                            <input type="search"   placeholder="Enter your search key ..." >
+                            <input type="search" th:field="*{name}" placeholder="Enter your search key ..." >
                             <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>

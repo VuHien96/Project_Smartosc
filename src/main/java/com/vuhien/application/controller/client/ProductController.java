@@ -41,20 +41,17 @@ public class ProductController {
                           @RequestParam(name = "categoryId", required = false) Integer categoryId,
                           @RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
                           @RequestParam(name = "size", required = false, defaultValue = "2") Integer size,
-                          @RequestParam(name = "sortByPrice", required = false) String sort,
-                          HttpServletResponse response,
-                          HttpServletRequest request,
-                          final Principal principal) {
+                          @RequestParam(name = "sortByPrice", required = false) String sort
+                          ) {
 
         HomeVM vm = new HomeVM();
 
-        Sort sortable;
-        sortable = Sort.by(Sort.Direction.ASC, "id");
-        if (sort != null) {
+        Sort sortable =Sort.by(Sort.Direction.ASC,"id");
+        if(sort != null) {
             if (sort.equals("ASC")) {
-                sortable = Sort.by(Sort.Direction.ASC, "price");
-            } else {
-                sortable = Sort.by(Sort.Direction.DESC, "price");
+                sortable =  Sort.by(Sort.Direction.ASC,"price");
+            }else {
+                sortable = Sort.by(Sort.Direction.DESC,"price");
             }
         }
 
@@ -72,7 +69,6 @@ public class ProductController {
         } else {
             productPage = productService.getListProductByCategoryOrProductNameContaining(pageable, null, null);
         }
-
         List<ProductVM> productVMList = new ArrayList<>();
 
         for (Product product : productPage.getContent()) {
