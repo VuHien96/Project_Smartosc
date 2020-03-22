@@ -35,22 +35,22 @@
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/admin/products}">
-                        <span class="menu-title">Product</span>
+                        <span class="menu-title">Quản lý sản phẩm</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/admin/categories}">
-                        <span class="menu-title">Category</span>
+                        <span class="menu-title">Quản lý danh mục</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" th:href="@{/admin/order}">
-                        <span class="menu-title">Order</span>
+                    <a class="nav-link" th:href="@{/admin/orders}">
+                        <span class="menu-title">Quản lý đơn hàng</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:href="@{/admin/chart}">
-                        <span class="menu-title">Chart</span>
+                        <span class="menu-title">Biểu đồ</span>
                     </a>
                 </li>
             </ul>
@@ -62,14 +62,14 @@
                     <form class="form-inline my-2 my-lg-0" th:action="@{/admin/products}" th:object="${productname}" method="get">
                         <input class="form-control mr-sm-2" th:field="*{name}" type="search" placeholder="Search"
                                aria-label="Search">
-                        <button class="btn btn-primary" type="submit">Search</button>
+                        <button class="btn btn-primary" type="submit">Tìm kiếm</button>
                     </form>
                 </div>
                 <h2 th:if="${vm.getKeyWord()}" th:text="${vm.getKeyWord()}"></h2>
 
                 <button type="button" class="btn btn-primary" id="new-product" data-toggle="modal"
                         style="margin-bottom: 20px">
-                    Add new product
+                    Thêm mới sản phẩm
                 </button>
 
                 <div class="col-lg-12 grid-margin stretch-card">
@@ -82,19 +82,19 @@
                                         Index
                                     </th>
                                     <th colspan="2">
-                                        Name
+                                        Tên sản phẩm
                                     </th>
                                     <th colspan="2">
-                                        Category
+                                        Danh mục
                                     </th>
                                     <th colspan="2">
-                                        Short Desc
+                                        Miêu tả
                                     </th>
                                     <th colspan="1">
-                                        Price
+                                        Giá
                                     </th>
                                     <th colspan="2">
-                                        Created Date
+                                        Ngày tạo
                                     </th>
                                     <th colspan="2">
                                         Action

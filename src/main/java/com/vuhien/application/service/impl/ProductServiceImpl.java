@@ -47,8 +47,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     public Product getOne(int productId){
-        Product product = productRepository.getOne(productId);
-        return product;
+       Optional<Product>  product = productRepository.findById(productId);
+        return product.get();
     }
 
     @Override

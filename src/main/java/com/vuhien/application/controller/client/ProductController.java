@@ -40,7 +40,7 @@ public class ProductController {
                           @Valid @ModelAttribute("productname") ProductVM productName,
                           @RequestParam(name = "categoryId", required = false) Integer categoryId,
                           @RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
-                          @RequestParam(name = "size", required = false, defaultValue = "2") Integer size,
+                          @RequestParam(name = "size", required = false, defaultValue = "4") Integer size,
                           @RequestParam(name = "sortByPrice", required = false) String sort
                           ) {
 
@@ -65,7 +65,7 @@ public class ProductController {
             vm.setKeyWord(category.getName());
         } else if (productName.getName() != null && !productName.getName().isEmpty()) {
             productPage = productService.getListProductByCategoryOrProductNameContaining(pageable, null, productName.getName().trim());
-            vm.setKeyWord("Find with key: " + productName.getName());
+            vm.setKeyWord("Kết quả tìm kiếm cho: " + productName.getName());
         } else {
             productPage = productService.getListProductByCategoryOrProductNameContaining(pageable, null, null);
         }
@@ -90,7 +90,7 @@ public class ProductController {
 
         vm.setProductVMList(productVMList);
         if (productVMList.size() == 0) {
-            vm.setKeyWord("Not found any product");
+            vm.setKeyWord("Không tìm thấy");
         }
 
 

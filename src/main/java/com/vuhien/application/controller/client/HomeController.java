@@ -19,12 +19,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 @RequestMapping("/client")
-public class HomeController {
+public class HomeController extends BaseController{
 
     @Autowired
     private CategoryService categoryService;
@@ -33,7 +36,12 @@ public class HomeController {
     private ProductService productService;
 
     @GetMapping("/home")
-    public String home(Model model,@ModelAttribute("productname") ProductVM productName){
+    public String home(Model model, @ModelAttribute("productname") ProductVM productName,
+                       HttpServletResponse response,
+                       HttpServletRequest request,
+                       final Principal principal){
+
+        this.checkCookie(response,request,principal);
         HomeVM vm = new HomeVM();
 
         List<CategoryDTO> categoryDTOS =categoryService.getListCategory();
@@ -70,4 +78,6 @@ public class HomeController {
 
         return "client/index";
     }
+
+
 }

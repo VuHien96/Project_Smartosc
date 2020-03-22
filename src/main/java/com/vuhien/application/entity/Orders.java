@@ -20,25 +20,36 @@ import java.util.List;
 @Table(name = "orders")
 public class Orders implements Serializable {
 
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "order_id")
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int orderId;
+    private int id;
 
-    @Column(name = "totalprice")
-    private Double totalPrice;
+    @Column(name = "guid")
+    private String guid;
 
-    @Column(name = "status")
-    private int status;
+    @Column(name = "username")
+    private String userName;
 
-    @CreationTimestamp
-    @Column(name = "createddate" ,updatable = false)
+    @Column(name = "customer_name")
+    private String customerName;
+
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "phone_number")
+    private String phoneNumber;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "price")
+    private double price;
+
+    @Column (name = "created_date")
     private Date createdDate;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
-    @OneToMany(mappedBy = "orders")
-    private List<OrderDetail> orderDetails = new ArrayList<>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "order")
+    private List<OrderProduct> listProductOrders = new ArrayList<>();
 
 }

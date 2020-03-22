@@ -18,6 +18,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +52,7 @@ public class AdminController {
 
         if (categoryName.getName() != null && !categoryName.getName().isEmpty()) {
             categoryPage = categoryService.getListCategoryByCategoryNameContaining(pageable, categoryName.getName().trim());
-            vm.setKeyWord("Find with key: " + categoryName.getName());
+            vm.setKeyWord("Kết quả tìm kiếm cho: " + categoryName.getName());
         } else categoryPage = categoryService.getListCategoryByCategoryNameContaining(pageable, null);
 
         List<CategoryVM> categoryVMList = new ArrayList<>();
@@ -98,12 +99,13 @@ public class AdminController {
 
         if (productName.getName() != null && !productName.getName().isEmpty()) {
             productPage = productService.getListProductByCategoryOrProductNameContaining(pageable, null, productName.getName().trim());
-            vm.setKeyWord("Find with key: " + productName.getName());
+            vm.setKeyWord("Kết quả tìm kiếm cho: " + productName.getName());
         } else {
             productPage = productService.getListProductByCategoryOrProductNameContaining(pageable, null, null);
         }
 
         List<ProductVM> productVMList = new ArrayList<>();
+        DecimalFormat df = new DecimalFormat("###,###.###");
 
         for (Product product : productPage.getContent()) {
             ProductVM productVM = new ProductVM();
@@ -125,7 +127,7 @@ public class AdminController {
         vm.setCategoryVMList(categoryVMList);
         vm.setProductVMList(productVMList);
         if (productVMList.size() == 0) {
-            vm.setKeyWord("Not found any product");
+            vm.setKeyWord("Không tìm thấy : ");
         }
         model.addAttribute("vm", vm);
         model.addAttribute("page", productPage);
