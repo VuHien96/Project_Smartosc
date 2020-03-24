@@ -7,19 +7,19 @@ Xây dựng website bán quần áo thời trang.
 2. Các chức năng chính
 
 2.1 Client:
-Đăng ký.
-Đăng nhập.
-Xem danh sách sản phẩm.
-Xem danh sách danh mục.
-Xem chi tiết sản phẩm.
-Tìm kiếm sản phẩm.
-Sắp xếp sản phẩm theo giá.
-Xem các sản phẩm theo danh mục
-Thêm sản phẩm vào giỏ hàng (trong trường hợp đã đăng nhập).
-Xem thông tin người dùng (trong trường hợp đã đăng nhập).
-Sửa thông tin người dùng (trong trường hợp đã đăng nhập).
-Xem sản phẩm trong giỏ hàng (trong trường hợp đã đăng nhập).
-Xem lịch sửa đơn hàng (trong trường hợp đã đăng nhập).
+- Đăng ký.
+- Đăng nhập.
+- Xem danh sách sản phẩm.
+- Xem danh sách danh mục.
+- Xem chi tiết sản phẩm.
+- Tìm kiếm sản phẩm.
+- Sắp xếp sản phẩm theo giá.
+- Xem các sản phẩm theo danh mục
+- Thêm sản phẩm vào giỏ hàng (trong trường hợp đã đăng nhập).
+- Xem thông tin người dùng (trong trường hợp đã đăng nhập).
+- Sửa thông tin người dùng (trong trường hợp đã đăng nhập).
+- Xem sản phẩm trong giỏ hàng (trong trường hợp đã đăng nhập).
+- Xem lịch sửa đơn hàng (trong trường hợp đã đăng nhập).
 
 2.2 Admin:
 Quản lý: thêm, sửa, xoá Sản phẩm.
