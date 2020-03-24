@@ -6,7 +6,7 @@ Xây dựng website bán quần áo thời trang.
 
 2. Các chức năng chính
 
-2.1 Client:
+ 2.1 Client:
 - Đăng ký.
 - Đăng nhập.
 - Xem danh sách sản phẩm.
@@ -21,20 +21,20 @@ Xây dựng website bán quần áo thời trang.
 - Xem sản phẩm trong giỏ hàng (trong trường hợp đã đăng nhập).
 - Xem lịch sửa đơn hàng (trong trường hợp đã đăng nhập).
 
-2.2 Admin:
-Quản lý: thêm, sửa, xoá Sản phẩm.
-Quản lý: thêm, sửa, xoá Danh mục.
-Quản lý: thêm, sửa, xoá Ảnh chi tiết của sản phẩm
+ 2.2 Admin:
+- Quản lý: thêm, sửa, xoá Sản phẩm.
+- Quản lý: thêm, sửa, xoá Danh mục.
+- Quản lý: thêm, sửa, xoá Ảnh chi tiết của sản phẩm
 
 3. Hướng dẫn cài đặt và chạy trên môi trường phát triển
 
-Clone repo: https://github.com/VuHien96/Techmaster.git
-Cài đặt MySQL Workbench
-Username: root
-Password: 12345
-IDE: Intellij Ultimate Version:2019.3.4
-Run: Application.java
-Sử Dụng trình duyệt bất kỳ để tương tác tại host: http://localhost:1996
-Góp ý, thắc mắc, vui lòng liên hệ;
-Facebook: https://www.facebook.com/hien.vuvan.3
-Email: vuhien96.jr@gmail.com
+- Clone repo: https://github.com/VuHien96/Techmaster.git
+- Cài đặt MySQL Workbench
+- Username: root
+- Password: 12345
+- IDE: Intellij Ultimate Version:2019.3.4
+- Run: Application.java
+- Sử Dụng trình duyệt bất kỳ để tương tác tại host: http://localhost:1996
+- Góp ý, thắc mắc, vui lòng liên hệ;
+- Facebook: https://www.facebook.com/hien.vuvan.3
+- Email: vuhien96.jr@gmail.com
