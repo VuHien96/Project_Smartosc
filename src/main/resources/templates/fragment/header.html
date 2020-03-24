@@ -48,6 +48,7 @@
                                     <div sec:authorize="hasRole('ADMIN')">
                                         <ul class="ht-dropdown ht-my_account">
                                             <li><a th:href="@{/admin/home}">Trang quản trị</a></li>
+                                            <li><a th:href="@{/user/detail}">Tài khoản của tôi</a></li>
                                             <li class="active"><a th:href="@{/logout}">Đăng xuất</a></li>
                                         </ul>
                                     </div>
