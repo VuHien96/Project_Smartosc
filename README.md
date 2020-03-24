@@ -6,7 +6,7 @@ Xây dựng website bán quần áo thời trang.
 
 # 2. Các chức năng chính
 
- * 2.1 Client:
+  + 2.1 Client:
 - Đăng ký.
 - Đăng nhập.
 - Xem danh sách sản phẩm.
