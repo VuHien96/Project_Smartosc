@@ -1,12 +1,12 @@
 # Techmaster
 
-1. Tên ứng dụng
+# 1. Tên ứng dụng
 
 Xây dựng website bán quần áo thời trang.
 
-2. Các chức năng chính
+# 2. Các chức năng chính
 
- 2.1 Client:
+ * 2.1 Client:
 - Đăng ký.
 - Đăng nhập.
 - Xem danh sách sản phẩm.
@@ -21,12 +21,12 @@ Xây dựng website bán quần áo thời trang.
 - Xem sản phẩm trong giỏ hàng (trong trường hợp đã đăng nhập).
 - Xem lịch sửa đơn hàng (trong trường hợp đã đăng nhập).
 
- 2.2 Admin:
+ * 2.2 Admin:
 - Quản lý: thêm, sửa, xoá Sản phẩm.
 - Quản lý: thêm, sửa, xoá Danh mục.
 - Quản lý: thêm, sửa, xoá Ảnh chi tiết của sản phẩm
 
-3. Hướng dẫn cài đặt và chạy trên môi trường phát triển
+# 3. Hướng dẫn cài đặt và chạy trên môi trường phát triển
 
 - Clone repo: https://github.com/VuHien96/Techmaster.git
 - Cài đặt MySQL Workbench
