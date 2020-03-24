@@ -21,7 +21,7 @@ Xây dựng website bán quần áo thời trang.
 - Xem sản phẩm trong giỏ hàng (trong trường hợp đã đăng nhập).
 - Xem lịch sửa đơn hàng (trong trường hợp đã đăng nhập).
 
-  2.2 Admin:
+2.2 Admin:
 - Quản lý: thêm, sửa, xoá Sản phẩm.
 - Quản lý: thêm, sửa, xoá Danh mục.
 - Quản lý: thêm, sửa, xoá Ảnh chi tiết của sản phẩm
